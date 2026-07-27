@@ -11,8 +11,8 @@ const CARDS_DATABASE = [
         name: "Plus Card",
         tag: "Mastercard",
         description: "A card designed for all mass-retail customers aged 23 and above who use BOG services. It targets low-to-medium income individuals across Georgia.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus-promo.jpg",
+        imageUrl: "images/plus.png",
+        promoImageUrl: "images/plus-promo.jpg",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-hscK4wPIG0S0mjGLrdgDkulK/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-hscK4wPIG0S0mjGLrdgDkulK/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
@@ -27,8 +27,8 @@ const CARDS_DATABASE = [
         name: "Plus Card Gold",
         tag: "Mastercard Gold",
         description: "A card designed for all mass-retail customers aged 23 and above who use BOG services. It targets low-to-medium income individuals across Georgia.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus-gold.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus-gold-promo.png",
+        imageUrl: "images/plus-gold.png",
+        promoImageUrl: "images/plus-gold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-rw8hG1JPOAJFFCg1lFt6PllI/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-rw8hG1JPOAJFFCg1lFt6PllI/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
@@ -43,8 +43,8 @@ const CARDS_DATABASE = [
         name: "Super Plus Card",
         tag: "Visa",
         description: "A card designed for the upper mass-retail segment—those who utilize the highest-value product bundles and represent the transitional segment leading up to SOLO. This targets medium-to-high-income customers who do not or cannot use SOLO services, yet actively engage with banking products and prioritize receiving premium benefits.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus-promo.png",
+        imageUrl: "images/super-plus.png",
+        promoImageUrl: "images/super-plus-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
@@ -59,8 +59,8 @@ const CARDS_DATABASE = [
         name: "Super Plus Card Gold",
         tag: "Visa Gold",
         description: "A card designed for the upper mass-retail segment—those who utilize the highest-value product bundles and represent the transitional segment leading up to SOLO. This targets medium-to-high-income customers who do not or cannot use SOLO services, yet actively engage with banking products and prioritize receiving premium benefits.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus-gold.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus-gold-promo.png",
+        imageUrl: "images/super-plus-gold.png",
+        promoImageUrl: "images/super-plus-gold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-z5Lbpgp4RA4QjFGuOXn8Ip11/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-z5Lbpgp4RA4QjFGuOXn8Ip11/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
@@ -75,8 +75,8 @@ const CARDS_DATABASE = [
         name: "sCool Card",
         tag: "Mastercard",
         description: "Targeted for school students aged 6–18.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/scool.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/scool-promo.png",
+        imageUrl: "images/scool.png",
+        promoImageUrl: "images/scool-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
@@ -91,8 +91,8 @@ const CARDS_DATABASE = [
         name: "Student Cards",
         tag: "Mastercard",
         description: "Youth aged 18–23 and individuals with active student status.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/students.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/students-promo.png",
+        imageUrl: "images/students.png",
+        promoImageUrl: "images/students-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
@@ -107,8 +107,8 @@ const CARDS_DATABASE = [
         name: "Teacher's Card",
         tag: "Mastercard",
         description: "Designed for school staff nationwide who are enrolled in the payroll program. This card offers tailored benefits created specifically for educators.",
-        imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/teacher.png",
-        promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/teacher-promo.png",
+        imageUrl: "images/teacher.png",
+        promoImageUrl: "images/teacher-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
