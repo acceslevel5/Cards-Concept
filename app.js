@@ -14,6 +14,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus-promo.jpg",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-hscK4wPIG0S0mjGLrdgDkulK/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-hscK4wPIG0S0mjGLrdgDkulK/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#FF5C0A",       // orange
             accentEnd: "#FF5C0A",    
@@ -29,6 +30,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus-gold.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/plus-gold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-rw8hG1JPOAJFFCg1lFt6PllI/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-rw8hG1JPOAJFFCg1lFt6PllI/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#FFD617",       // gold
             accentEnd: "#f59e0b",    
@@ -44,6 +46,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#FFFFFF",       // white
             accentEnd: "#06b6d4",    
@@ -59,6 +62,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus-gold.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/super-plus-gold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-z5Lbpgp4RA4QjFGuOXn8Ip11/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-z5Lbpgp4RA4QjFGuOXn8Ip11/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#FFD617",       // gold
             accentEnd: "#1d4ed8",    
@@ -74,6 +78,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/scool.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/scool-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#91E000",       // lime green
             accentEnd: "#334155",    
@@ -89,6 +94,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/students.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/students-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#704BBC",       // purple
             accentEnd: "#be123c",    
@@ -104,6 +110,7 @@ const CARDS_DATABASE = [
         imageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/teacher.png",
         promoImageUrl: "/Users/glezhava/.gemini/antigravity/scratch/neo-bank-presentation/images/teacher-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`,
+        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#EEE8E2",       // light grey
             accentEnd: "#0f766e",    
@@ -177,6 +184,26 @@ function initApp() {
     }
 }
 
+// Helper to switch iframe contents dynamically with premium fade out/loader transitions
+function switchIframeContent(newIframeCode) {
+    viewportLoader.classList.add("active");
+    iframeWrapper.classList.add("fade-out");
+    
+    setTimeout(() => {
+        iframeWrapper.innerHTML = newIframeCode;
+        const iframe = iframeWrapper.querySelector("iframe");
+        if (iframe) {
+            iframe.onload = () => {
+                viewportLoader.classList.remove("active");
+                iframeWrapper.classList.remove("fade-out");
+            };
+        } else {
+            viewportLoader.classList.remove("active");
+            iframeWrapper.classList.remove("fade-out");
+        }
+    }, 300);
+}
+
 // 4. Select Card and Update UI
 function selectCard(cardId, isInitialLoad = false) {
     const cardData = CARDS_DATABASE.find(c => c.id === cardId);
@@ -243,25 +270,15 @@ function selectCard(cardId, isInitialLoad = false) {
             promoContainer.style.display = "none";
         }
     } else {
-        // Smooth fade out existing elements
-        iframeWrapper.classList.add("fade-out");
-        viewportLoader.classList.add("active");
+        // Use helper to switch to the default preview iframe
+        switchIframeContent(cardData.iframeCode);
         
         if (promoImage) {
             promoImage.classList.remove("loaded");
         }
 
-        // Wait for fade-out to finish, then swap code
+        // Handle text overlays and promo image swapping with transition matching timeout
         setTimeout(() => {
-            iframeWrapper.innerHTML = cardData.iframeCode;
-            
-            const iframe = iframeWrapper.querySelector("iframe");
-            if (iframe) {
-                iframe.onload = () => {
-                    viewportLoader.classList.remove("active");
-                    iframeWrapper.classList.remove("fade-out");
-                };
-            }
             updateTexts(cardData);
 
             // Swap promo image and fade it back in when loaded
@@ -274,7 +291,7 @@ function selectCard(cardId, isInitialLoad = false) {
             } else {
                 promoContainer.style.display = "none";
             }
-        }, 300); // matches CSS transition fade length
+        }, 300);
     }
 }
 
@@ -301,17 +318,27 @@ function updateTexts(cardData) {
 // 5. Handle Interactive Orbit Mode and Scroll Synchronization
 if (interactiveToggle) {
     interactiveToggle.addEventListener("click", () => {
+        const cardData = CARDS_DATABASE.find(c => c.id === currentActiveCardId);
+        if (!cardData) return;
+
         isOrbitMode = !isOrbitMode;
         if (isOrbitMode) {
             iframeWrapper.style.pointerEvents = "auto";
             interactiveToggle.textContent = "სქროლის რეჟიმი";
             interactiveToggle.classList.add("orbit-active");
             interactiveToggle.style.borderColor = "var(--active-color)";
+            
+            // Swap to the interactive/orbit-mode 3D iframe model
+            const interactiveCode = cardData.interactiveIframeCode || cardData.iframeCode;
+            switchIframeContent(interactiveCode);
         } else {
             iframeWrapper.style.pointerEvents = "none";
             interactiveToggle.textContent = "დაატრიალე 3D";
             interactiveToggle.classList.remove("orbit-active");
             interactiveToggle.style.borderColor = "var(--border-glass)";
+            
+            // Swap back to the default preview 3D iframe model
+            switchIframeContent(cardData.iframeCode);
         }
     });
 }
