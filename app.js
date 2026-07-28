@@ -126,7 +126,7 @@ const CARDS_DATABASE = [
         imageUrl: "images/solo-visa.png",
         promoImageUrl: "images/solo-package.png",
         iframeCode: `<iframe src='https://my.spline.design/solovisa-crG2ibLjBJOUWzr1Ig4G3Ohk/' frameborder='0' width='100%' height='100%'></iframe>`,
-        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        interactiveIframeCode: `<iframe src='https://my.spline.design/solovisacopy-YSS9O0vR9Il7t4owK3W28Jeo/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#EEE8E2",       // light grey
             accentEnd: "#0f766e",    
