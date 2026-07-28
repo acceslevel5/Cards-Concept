@@ -125,7 +125,7 @@ const CARDS_DATABASE = [
         description: "SOLO is a premium banking service from the Bank of Georgia, fully tailored to your lifestyle and expectations. It is not just a banking service – it is a personal partnership, created for people who value time, status and an individual approach to achieving their financial goals.",
         imageUrl: "images/solo-visa.png",
         promoImageUrl: "images/solo-package.png",
-        iframeCode: `<iframe src='https://my.spline.design/bogcard-6iROkGyYKfu6qLtot5SGawOc/' frameborder='0' width='100%' height='100%'></iframe>`,
+        iframeCode: `<iframe src='https://my.spline.design/solovisa-crG2ibLjBJOUWzr1Ig4G3Ohk/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#EEE8E2",       // light grey
