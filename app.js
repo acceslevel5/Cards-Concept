@@ -116,8 +116,9 @@ const CARDS_DATABASE = [
             accentEnd: "#0f766e",    
             glow1: "rgba(6, 182, 212, 0.25)",
             glow2: "rgba(15, 118, 110, 0.15)"
-        },
-        {
+        }
+    },
+    {
         id: "card-8",
         name: "Solo",
         tag: "Visa",
