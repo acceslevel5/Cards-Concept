@@ -77,7 +77,7 @@ const CARDS_DATABASE = [
         description: "Targeted for school students aged 6–18.",
         imageUrl: "images/scool.png",
         promoImageUrl: "images/scool-promo.png",
-        iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`,
+        iframeCode: `<iframe src='https://my.spline.design/scoolcardcopy-UU6bni4BlIqxVniKojBcDKsf/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#91E000",       // lime green
