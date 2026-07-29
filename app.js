@@ -46,7 +46,7 @@ const CARDS_DATABASE = [
         imageUrl: "images/super-plus.png",
         promoImageUrl: "images/super-plus-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`,
-        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        interactiveIframeCode: `<iframe src='https://my.spline.design/superpluscardcopy-ye9VOABkV3Lx4MiutKBYy13H/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#FFFFFF",       // white
             accentEnd: "#06b6d4",    
