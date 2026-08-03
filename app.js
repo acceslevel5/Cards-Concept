@@ -93,7 +93,7 @@ const CARDS_DATABASE = [
         description: "Youth aged 18–23 and individuals with active student status.",
         imageUrl: "images/students.png",
         promoImageUrl: "images/students-promo.png",
-        iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`,
+        iframeCode: `<iframe src='https://my.spline.design/solovisacopy-hN32j3b5flO5CtJsuXGawjkN/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#704BBC",       // purple
