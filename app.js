@@ -94,7 +94,7 @@ const CARDS_DATABASE = [
         imageUrl: "images/students.png",
         promoImageUrl: "images/students-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/solovisacopy-hN32j3b5flO5CtJsuXGawjkN/' frameborder='0' width='100%' height='100%'></iframe>`,
-        interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-akr9MyVcnJqj5i7nK9xUgZ0q/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        interactiveIframeCode: `<iframe src='https://my.spline.design/studentcardpackage-SxAIDlSa50ZVGt79tLZ0v2Ui/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
             accent: "#704BBC",       // purple
             accentEnd: "#be123c",    
