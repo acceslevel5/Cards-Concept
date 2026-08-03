@@ -60,7 +60,7 @@ const CARDS_DATABASE = [
         tag: "Visa Gold",
         description: "A card designed for the upper mass-retail segment—those who utilize the highest-value product bundles and represent the transitional segment leading up to SOLO. This targets medium-to-high-income customers who do not or cannot use SOLO services, yet actively engage with banking products and prioritize receiving premium benefits.",
         imageUrl: "images/super-plus-gold.png",
-        promoImageUrl: "images/super-plus-gold-promo.png",
+        promoImageUrl: "images/visagold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-z5Lbpgp4RA4QjFGuOXn8Ip11/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/pluscardgoldpackage-8YnwSksCSrI6iEkfqJwlfULr/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
         theme: {
