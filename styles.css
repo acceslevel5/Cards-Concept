@@ -513,12 +513,18 @@ h1 {
     transform: translateY(0);
 }
 
-/* 3D Orbit vs Scroll Control Button */
-.viewport-control-btn {
+/* 3D Viewport Controls Container */
+.viewport-controls {
     position: absolute;
     top: 60px;
     right: 60px;
     z-index: 12;
+    display: flex;
+    gap: 12px;
+}
+
+/* 3D Orbit vs Scroll Control Button */
+.viewport-control-btn {
     padding: 10px 22px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.03);
@@ -739,9 +745,13 @@ iframe {
         flex-shrink: 0;
     }
 
-    .viewport-control-btn {
+    .viewport-controls {
         top: 30px;
         right: 30px;
+        gap: 8px;
+    }
+
+    .viewport-control-btn {
         padding: 8px 16px;
         font-size: 11px;
     }
