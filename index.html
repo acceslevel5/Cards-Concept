@@ -76,10 +76,14 @@
                 <p class="overlay-description" id="product-description">იტვირთება აღწერა...</p>
             </div>
 
-            <!-- Sleek Toggle Buttons for 3D Interaction (FIXED) -->
+            <!-- Sleek Segmented Control for 3D Interaction (FIXED) -->
             <div class="viewport-controls">
-                <button class="viewport-control-btn" id="orbit-toggle">დაატრიალე 3D</button>
-                <button class="viewport-control-btn" id="explode-toggle">დაშალე 3D</button>
+                <div class="segmented-control" id="view-segmented-control" data-active-index="0">
+                    <div class="segmented-control-indicator"></div>
+                    <button class="segment-btn active" data-index="0" data-mode="scroll">პრეზენტაცია</button>
+                    <button class="segment-btn" data-index="1" data-mode="orbit">დაატრიალე 3D</button>
+                    <button class="segment-btn" data-index="2" data-mode="explode">დაშალე 3D</button>
+                </div>
             </div>
 
             <!-- Scrollable Content Wrapper -->

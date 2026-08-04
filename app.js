@@ -146,8 +146,8 @@ const canvasContainer = document.querySelector(".canvas-container");
 const displayScrollContainer = document.getElementById("display-scroll-container");
 const promoContainer = document.getElementById("promo-container");
 const promoImage = document.getElementById("promo-image");
-const orbitToggle = document.getElementById("orbit-toggle");
-const explodeToggle = document.getElementById("explode-toggle");
+const segmentedControl = document.getElementById("view-segmented-control");
+const segmentButtons = document.querySelectorAll(".segment-btn");
 
 let currentActiveCardId = null;
 let currentViewMode = "scroll"; // can be "scroll", "orbit", "explode"
@@ -233,17 +233,19 @@ function selectCard(cardId, isInitialLoad = false) {
         displayScrollContainer.scrollTop = 0;
     }
 
-    // Reset 3D interactive modes to scroll mode
+    // Reset 3D interactive modes to scroll mode (segmented control index 0)
     currentViewMode = "scroll";
-    if (orbitToggle) {
-        orbitToggle.textContent = "დაატრიალე 3D";
-        orbitToggle.classList.remove("orbit-active");
-        orbitToggle.style.borderColor = "var(--border-glass)";
+    if (segmentedControl) {
+        segmentedControl.setAttribute("data-active-index", "0");
     }
-    if (explodeToggle) {
-        explodeToggle.textContent = "დაშალე 3D";
-        explodeToggle.classList.remove("orbit-active");
-        explodeToggle.style.borderColor = "var(--border-glass)";
+    if (segmentButtons) {
+        segmentButtons.forEach(btn => {
+            if (btn.getAttribute("data-mode") === "scroll") {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
     }
     iframeWrapper.style.pointerEvents = "none";
     if (canvasContainer) {
@@ -342,86 +344,51 @@ function setViewMode(mode, cardData) {
     if (!cardData) return;
     
     currentViewMode = mode;
+    let targetIndex = "0";
     
     if (currentViewMode === "scroll") {
         iframeWrapper.style.pointerEvents = "none";
-        
-        // Reset orbit button
-        if (orbitToggle) {
-            orbitToggle.textContent = "დაატრიალე 3D";
-            orbitToggle.classList.remove("orbit-active");
-            orbitToggle.style.borderColor = "var(--border-glass)";
-        }
-        // Reset explode button
-        if (explodeToggle) {
-            explodeToggle.textContent = "დაშალე 3D";
-            explodeToggle.classList.remove("orbit-active");
-            explodeToggle.style.borderColor = "var(--border-glass)";
-        }
-        
+        targetIndex = "0";
         switchIframeContent(cardData.iframeCode);
     } else if (currentViewMode === "orbit") {
         iframeWrapper.style.pointerEvents = "auto";
-        
-        // Active orbit button
-        if (orbitToggle) {
-            orbitToggle.textContent = "სქროლის რეჟიმი";
-            orbitToggle.classList.add("orbit-active");
-            orbitToggle.style.borderColor = "var(--active-color)";
-        }
-        // Reset explode button
-        if (explodeToggle) {
-            explodeToggle.textContent = "დაშალე 3D";
-            explodeToggle.classList.remove("orbit-active");
-            explodeToggle.style.borderColor = "var(--border-glass)";
-        }
-        
+        targetIndex = "1";
         const orbitCode = cardData.interactiveIframeCode || cardData.iframeCode;
         switchIframeContent(orbitCode);
     } else if (currentViewMode === "explode") {
         iframeWrapper.style.pointerEvents = "auto";
-        
-        // Reset orbit button
-        if (orbitToggle) {
-            orbitToggle.textContent = "დაატრიალე 3D";
-            orbitToggle.classList.remove("orbit-active");
-            orbitToggle.style.borderColor = "var(--border-glass)";
-        }
-        // Active explode button
-        if (explodeToggle) {
-            explodeToggle.textContent = "სქროლის რეჟიმი";
-            explodeToggle.classList.add("orbit-active");
-            explodeToggle.style.borderColor = "var(--active-color)";
-        }
-        
+        targetIndex = "2";
         const explodeCode = cardData.explodesIframeCode || cardData.iframeCode;
         switchIframeContent(explodeCode);
     }
+
+    // Update Segmented Control DOM attributes and active classes
+    if (segmentedControl) {
+        segmentedControl.setAttribute("data-active-index", targetIndex);
+    }
+    if (segmentButtons) {
+        segmentButtons.forEach(btn => {
+            if (btn.getAttribute("data-mode") === currentViewMode) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
+    }
 }
 
-if (orbitToggle) {
-    orbitToggle.addEventListener("click", () => {
-        const cardData = CARDS_DATABASE.find(c => c.id === currentActiveCardId);
-        if (!cardData) return;
+// Bind click events to Segmented Control buttons
+if (segmentButtons) {
+    segmentButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const cardData = CARDS_DATABASE.find(c => c.id === currentActiveCardId);
+            if (!cardData) return;
 
-        if (currentViewMode === "orbit") {
-            setViewMode("scroll", cardData);
-        } else {
-            setViewMode("orbit", cardData);
-        }
-    });
-}
+            const selectedMode = btn.getAttribute("data-mode");
+            if (selectedMode === currentViewMode) return; // already active
 
-if (explodeToggle) {
-    explodeToggle.addEventListener("click", () => {
-        const cardData = CARDS_DATABASE.find(c => c.id === currentActiveCardId);
-        if (!cardData) return;
-
-        if (currentViewMode === "explode") {
-            setViewMode("scroll", cardData);
-        } else {
-            setViewMode("explode", cardData);
-        }
+            setViewMode(selectedMode, cardData);
+        });
     });
 }
 

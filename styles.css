@@ -519,36 +519,69 @@ h1 {
     top: 60px;
     right: 60px;
     z-index: 12;
-    display: flex;
-    gap: 12px;
 }
 
-/* 3D Orbit vs Scroll Control Button */
-.viewport-control-btn {
-    padding: 10px 22px;
-    border-radius: 30px;
+/* Segmented Control Component */
+.segmented-control {
+    position: relative;
+    display: flex;
+    align-items: center;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-glass);
-    color: var(--text-primary);
+    border-radius: 30px;
+    padding: 4px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    user-select: none;
+}
+
+.segmented-control-indicator {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: calc(100% - 8px);
+    width: calc(33.333% - 2.666px); /* math adjustment for equal spacing */
+    background: #FFFFFF;
+    border-radius: 26px;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Slide positions */
+.segmented-control[data-active-index="0"] .segmented-control-indicator {
+    transform: translateX(0);
+}
+.segmented-control[data-active-index="1"] .segmented-control-indicator {
+    transform: translateX(100%);
+}
+.segmented-control[data-active-index="2"] .segmented-control-indicator {
+    transform: translateX(200%);
+}
+
+.segment-btn {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 10px 24px;
     font-family: inherit;
     font-size: 13px;
     font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    transition: var(--transition-smooth);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    letter-spacing: 0.5px;
+    z-index: 2;
+    transition: color 0.3s ease;
+    outline: none;
+    border-radius: 26px;
+    white-space: nowrap;
 }
 
-.viewport-control-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--active-color);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-    transform: translateY(-1px);
+.segment-btn:hover {
+    color: #FFFFFF;
 }
 
-.viewport-control-btn:active {
-    transform: translateY(0);
+.segment-btn.active {
+    color: #1B1C1D; /* dark text when active on white background */
 }
 
 /* Card Info Overlay (Top Left) */
@@ -748,11 +781,10 @@ iframe {
     .viewport-controls {
         top: 30px;
         right: 30px;
-        gap: 8px;
     }
 
-    .viewport-control-btn {
-        padding: 8px 16px;
+    .segment-btn {
+        padding: 6px 14px;
         font-size: 11px;
     }
 
