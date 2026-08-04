@@ -533,6 +533,7 @@ h1 {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     user-select: none;
+    min-width: 380px;
 }
 
 .segmented-control-indicator {
@@ -563,7 +564,9 @@ h1 {
     position: relative;
     background: none;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 0;
+    flex: 1 1 0%;
+    text-align: center;
     font-family: inherit;
     font-size: 13px;
     font-weight: 600;
@@ -781,10 +784,16 @@ iframe {
     .viewport-controls {
         top: 30px;
         right: 30px;
+        left: 30px;
+    }
+
+    .segmented-control {
+        min-width: unset;
+        width: 100%;
     }
 
     .segment-btn {
-        padding: 6px 14px;
+        padding: 6px 0;
         font-size: 11px;
     }
 
