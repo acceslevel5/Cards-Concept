@@ -15,6 +15,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/plus-promo.jpg",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-hscK4wPIG0S0mjGLrdgDkulK/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/pluscardmastercardpackage-rIx9O9c9hBlwLTqtFi2y0GCk/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardmastercardpackage-rIx9O9c9hBlwLTqtFi2y0GCk/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#FF5C0A",       // orange
             accentEnd: "#FF5C0A",    
@@ -31,6 +32,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/plus-gold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-rw8hG1JPOAJFFCg1lFt6PllI/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/pluscardgoldcopy-sWKjlzyhEbmSsiWvQrihWwyP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardgoldcopy-sWKjlzyhEbmSsiWvQrihWwyP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#FFD617",       // gold
             accentEnd: "#f59e0b",    
@@ -47,6 +49,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/super-plus-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-SeHUXUzEFKzP3wFpAcbyonkP/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/superpluscardcopy-ye9VOABkV3Lx4MiutKBYy13H/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/superpluscardcopy-ye9VOABkV3Lx4MiutKBYy13H/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#FFFFFF",       // white
             accentEnd: "#06b6d4",    
@@ -63,6 +66,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/visagold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-z5Lbpgp4RA4QjFGuOXn8Ip11/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/pluscardgoldpackage-8YnwSksCSrI6iEkfqJwlfULr/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardgoldpackage-8YnwSksCSrI6iEkfqJwlfULr/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#FFD617",       // gold
             accentEnd: "#1d4ed8",    
@@ -79,6 +83,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/scool-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/scoolcardcopy-UU6bni4BlIqxVniKojBcDKsf/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#91E000",       // lime green
             accentEnd: "#334155",    
@@ -95,6 +100,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/student-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/solovisacopy-hN32j3b5flO5CtJsuXGawjkN/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/studentcardpackage-SxAIDlSa50ZVGt79tLZ0v2Ui/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/studentcardpackage-SxAIDlSa50ZVGt79tLZ0v2Ui/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#704BBC",       // purple
             accentEnd: "#be123c",    
@@ -111,6 +117,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/teacher-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/teacher39scardcopy-4Aj7YGMcfATZrglIqgiDhPAA/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/teacher39scardcopy-4Aj7YGMcfATZrglIqgiDhPAA/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#EEE8E2",       // light grey
             accentEnd: "#0f766e",    
@@ -127,6 +134,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/solo-package.png",
         iframeCode: `<iframe src='https://my.spline.design/solovisa-crG2ibLjBJOUWzr1Ig4G3Ohk/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/solovisacopy-YSS9O0vR9Il7t4owK3W28Jeo/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/solovisacopy-YSS9O0vR9Il7t4owK3W28Jeo/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#EEE8E2",       // light grey
             accentEnd: "#0f766e",    
