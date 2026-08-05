@@ -127,6 +127,23 @@ const CARDS_DATABASE = [
     },
     {
         id: "card-8",
+        name: "Business Card",
+        tag: "Visa Business",
+        description: "A card designed for business entities and individual entrepreneurs to manage company expenses efficiently. It offers separate balance control, flexible limits, and simplified accounting.",
+        imageUrl: "",
+        promoImageUrl: "",
+        iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder (Teacher's Card)
+        interactiveIframeCode: `<iframe src='https://my.spline.design/teacher39scardcopy-4Aj7YGMcfATZrglIqgiDhPAA/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
+        explodesIframeCode: `<iframe src='https://my.spline.design/teacher39scardrotate-o1IeFFdgSFMExJm0Ed5MRVH8/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
+        theme: {
+            accent: "#1e293b",       // Slate Theme
+            accentEnd: "#475569",    
+            glow1: "rgba(71, 85, 105, 0.25)",
+            glow2: "rgba(30, 41, 59, 0.15)"
+        }
+    },
+    {
+        id: "card-9",
         name: "Solo",
         tag: "Visa",
         description: "SOLO is a premium banking service from the Bank of Georgia, fully tailored to your lifestyle and expectations. It is not just a banking service – it is a personal partnership, created for people who value time, status and an individual approach to achieving their financial goals.",
