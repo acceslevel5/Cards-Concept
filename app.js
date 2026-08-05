@@ -15,7 +15,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/plus-promo.jpg",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-hscK4wPIG0S0mjGLrdgDkulK/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/pluscardmastercardpackage-rIx9O9c9hBlwLTqtFi2y0GCk/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
-        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardmastercardpackage-rIx9O9c9hBlwLTqtFi2y0GCk/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardmastercardrotate-uIgI7Bg1JwS0vg4ITnZw27jY/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#FF5C0A",       // orange
             accentEnd: "#FF5C0A",    
