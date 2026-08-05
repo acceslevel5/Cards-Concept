@@ -98,9 +98,9 @@ const CARDS_DATABASE = [
         description: "Youth aged 18–23 and individuals with active student status.",
         imageUrl: "images/students.png",
         promoImageUrl: "images/student-promo.png",
-        iframeCode: `<iframe src='https://my.spline.design/solovisacopy-hN32j3b5flO5CtJsuXGawjkN/' frameborder='0' width='100%' height='100%'></iframe>`,
+        iframeCode: `<iframe src='https://my.spline.design/studentcardsgradient-nyTY6MGCji21z1jjToFpTwfX/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/studentcardpackage-SxAIDlSa50ZVGt79tLZ0v2Ui/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
-        explodesIframeCode: `<iframe src='https://my.spline.design/studentcardpackage-SxAIDlSa50ZVGt79tLZ0v2Ui/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/studentcardsgradientrotate-Wc95jRyGM2gENzjqT27O47NA/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#704BBC",       // purple
             accentEnd: "#be123c",    
