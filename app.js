@@ -130,7 +130,7 @@ const CARDS_DATABASE = [
         name: "Business Card",
         tag: "Mastercard",
         description: "A card designed for business entities and individual entrepreneurs to manage company expenses efficiently. It offers separate balance control, flexible limits, and simplified accounting.",
-        imageUrl: "",
+        imageUrl: "images/business.png",
         promoImageUrl: "",
         iframeCode: `<iframe src='https://my.spline.design/businessmastercard-zvrESqokJhJrgYbbU6eTMsrn/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder (Teacher's Card)
         interactiveIframeCode: `<iframe src='https://my.spline.design/businesscardpackage-xFABhOliiQW3Rn8P3ZZSuYAi/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
