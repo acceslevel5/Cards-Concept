@@ -32,7 +32,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/plus-gold-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-rw8hG1JPOAJFFCg1lFt6PllI/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/pluscardgoldcopy-sWKjlzyhEbmSsiWvQrihWwyP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
-        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardgoldcopy-sWKjlzyhEbmSsiWvQrihWwyP/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/pluscardgoldcopy-1qqawpvv83tvehCHUHbWM1nk/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#FFD617",       // gold
             accentEnd: "#f59e0b",    
@@ -83,7 +83,7 @@ const CARDS_DATABASE = [
         promoImageUrl: "images/scool-promo.png",
         iframeCode: `<iframe src='https://my.spline.design/scoolcardcopy-UU6bni4BlIqxVniKojBcDKsf/' frameborder='0' width='100%' height='100%'></iframe>`,
         interactiveIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with interactive model if different
-        explodesIframeCode: `<iframe src='https://my.spline.design/bogcardcopy-DusFhk5YWQcN1WhEkKUCO2yp/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
+        explodesIframeCode: `<iframe src='https://my.spline.design/scoolcardcopy-yTW3O6aPZtsJoeaK7SsSz7Ba/' frameborder='0' width='100%' height='100%'></iframe>`, // Replace with deconstructed model if different
         theme: {
             accent: "#91E000",       // lime green
             accentEnd: "#334155",    
