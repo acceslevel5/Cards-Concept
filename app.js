@@ -128,13 +128,13 @@ const CARDS_DATABASE = [
     {
         id: "card-8",
         name: "Business Card",
-        tag: "Visa Business",
+        tag: "Mastercard",
         description: "A card designed for business entities and individual entrepreneurs to manage company expenses efficiently. It offers separate balance control, flexible limits, and simplified accounting.",
         imageUrl: "",
         promoImageUrl: "",
-        iframeCode: `<iframe src='https://my.spline.design/bogcardcopy-Vw8DdiCUihgx4crFUeJS0UAS/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder (Teacher's Card)
-        interactiveIframeCode: `<iframe src='https://my.spline.design/teacher39scardcopy-4Aj7YGMcfATZrglIqgiDhPAA/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
-        explodesIframeCode: `<iframe src='https://my.spline.design/teacher39scardrotate-o1IeFFdgSFMExJm0Ed5MRVH8/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
+        iframeCode: `<iframe src='https://my.spline.design/businessmastercard-zvrESqokJhJrgYbbU6eTMsrn/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder (Teacher's Card)
+        interactiveIframeCode: `<iframe src='https://my.spline.design/businesscardpackage-xFABhOliiQW3Rn8P3ZZSuYAi/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
+        explodesIframeCode: `<iframe src='https://my.spline.design/businessmastercardrotate-EEd3sBMowOL9oEDzsP7wyTzO/' frameborder='0' width='100%' height='100%'></iframe>`, // Placeholder
         theme: {
             accent: "#1e293b",       // Slate Theme
             accentEnd: "#475569",    
